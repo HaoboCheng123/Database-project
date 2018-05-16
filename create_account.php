@@ -1,5 +1,6 @@
 <?php
 include("config.php");
+
    if($_SERVER["REQUEST_METHOD"] == "POST") {
         $myusername = mysqli_real_escape_string($db,$_POST['username']);
         $email = mysqli_real_escape_string($db,$_POST['email']);
